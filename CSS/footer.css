@@ -1,0 +1,38 @@
+footer{
+    display: grid;
+    background-color: rgb(41, 41, 41);
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    padding: 1em;
+    padding-bottom: 0.5em;
+}
+footer a{
+    display: inline-block;
+    padding: 0.5em;
+    width: auto;
+    color: white;
+}
+footer h5{
+    grid-column: 1/4;
+    padding: 0.1em;
+    margin: 0.2em;
+    color: white;
+}
+footer a:active{
+    color: aqua;
+    }
+
+@media only screen and
+(max-device-width:768px){
+    footer{
+        grid-template-columns: 1fr 1fr;
+       
+    }
+
+    footer h5{
+        grid-column: 1/3;
+        /* padding: 0.1em;
+        margin: 0.2em; */
+    }
+    
+}
