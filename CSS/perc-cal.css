@@ -1,0 +1,258 @@
+
+    *::placeholder {
+      opacity: 0.5;
+      color: brown;
+      text-align: center;
+    }
+
+    #body {
+      background-color: rgb(20%, 20%, 25%);
+      color: #0de61a;
+      display: grid;
+    }
+
+    .cont{
+      display: grid;
+      position: relative;
+      place-items: center;
+    }
+
+    header{
+      position: relative;
+      display: grid;
+      place-items: center;
+      padding: 0;
+    }
+
+    #res1 {
+      color: rgb(5%, 55%, 100%);
+      display: grid;
+      width: 100%;
+      height: 3em;
+     font-size: 2rem;
+     font-weight: bold;
+      place-content: center;
+      background-color: rgb(85%, 90%, 100%);
+      border-radius: 30px;
+      margin-bottom: 1rem;
+    }
+
+    #res2 {
+      color: rgb(255, 13, 94);
+      display: grid;
+      width: 100%;
+      height: 3em;
+     font-size: 2rem;
+     font-weight: bold;
+      place-content: center;
+      background-color: rgb(85%, 90%, 100%);
+      border-radius: 30px;
+      margin-bottom: 1.5rem;
+    }
+
+    header a{
+      color: rgb(54, 120, 243);
+      padding: 0;
+    }
+    h1{
+      padding: 0;
+      margin: 0;
+    }
+    header h2 {
+      height: 20px;
+      font-style: italic;
+      font-family: "Times New Roman";
+      text-align: center;
+    }
+
+    /* div {
+      font-size: 30px;
+      font-weight: bold;
+      padding-left: 20px;
+      padding-top: 17px;
+      margin-top: 20px;
+      height: 50px;
+      background-color: rgb(85%, 90%, 100%);
+      border-radius: 30px;
+    } */
+
+    input {
+      height: 3.5rem;
+      margin: 1rem auto;
+      border-radius: 10px;
+      border: 5px solid;
+      font-size: 1.4rem;
+      font-weight: bold;
+    
+    }
+
+    #num1,
+    #num2 {
+      border-color: rgb(5%, 55%, 100%);
+      display: inline-block;
+    }
+
+    #num3,
+    #num4 {
+      border-color: rgb(255, 13, 94);
+      display: inline-block;
+    }
+
+    button {
+      
+      font-size: 1.15rem;
+      border-radius: 15px;
+      font-weight: bold;
+      outline: none;
+    }
+
+    .theme-cont{
+      width: auto;
+      position: absolute;
+      right: 2rem;
+    }
+    #light{
+      height: auto;
+      margin: auto 0.9em;
+    }
+    #dark{
+      margin: auto 0.9em;
+      height: auto;
+    }
+    
+    .lbl-div{
+      text-align: center;
+    }
+    #lblL{
+      display: inline-block;
+      font-size: 0.6rem;
+      font-family: "Cursive";
+      margin: 1.8em;
+    }
+    #lblD {
+      display: inline-block;
+      font-size: 0.6rem;
+      font-family: "Cursive";
+      margin: 1.8em;
+    }
+    .input1-btns{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 3rem;
+      margin: 2em auto;
+    }
+    .input2-btns{
+      display: flex;
+      width: 100%;
+      justify-content: center;
+      gap: 3rem;
+      margin: 2em auto;
+    }
+    #clr,
+    #clr1 {
+     padding: 0.5em 2em;
+     
+    }
+
+    #cal1,
+    #cal0 {
+      
+     padding: 0.5em 2em;
+    }
+    button:hover{
+      cursor: pointer;
+      outline: none;
+    }
+    hr{
+      width: 90%;
+    }
+
+    #clr:active,
+    #clr1:active {
+      background-color: red;
+      color: white;
+    }
+
+    #cal1:active {
+      background-color: rgb(5%, 55%, 100%);
+      color: white;
+    }
+
+    #cal0:active {
+      background-color: rgb(255, 13, 94);
+      color: white;
+    }
+
+    /*** :active means mouse held down ***/
+
+     @media only screen and (max-device-width : 768px) {
+
+       body{
+    /* background-color: rgb(2, 20, 49); */
+    /* background-size: contain; */
+    display: block;
+    
+  }
+      .cont{
+        display: block;
+        position: relative;
+        place-items: center;
+      }
+
+      .inputs1,.inputs2{
+        display: grid;
+        width: 100%;
+        place-items: center;
+        margin: auto;
+        /* background-color: coral; */
+      }
+      .input1-btns,.input2-btns{
+        display: grid;
+        width: 100%;
+        justify-content: center;
+        grid-template-columns: 1fr 1fr;
+        margin: 2em auto;
+      }
+      #num1,
+      #num2 {
+        border-color: rgb(5%, 55%, 100%);
+        display: block;
+        margin: auto;
+      }
+  
+      #num3,
+      #num4 {
+        border-color: rgb(255, 13, 94);
+        display: block;
+        margin: auto;
+      }
+      .theme-cont{
+        right: 0.2rem;
+        top: 1rem;
+      }
+      #light{
+        height: auto;
+        margin-right: 0.5em;
+        margin-left: 2em;
+      }
+      #dark{
+        margin-left: 0.4em;
+        margin-right: 0.5em;
+        height: auto;
+      }
+      #lblL{
+        margin-left: 4em;
+        margin-right: 0.5em;
+      }
+      #lblD {
+        margin-right: 0.5em;
+        margin-left: 0.5em;
+      }
+      svg{
+        width: 150px;
+        height: 80px;
+      }
+  
+    } 
+ 
