@@ -1,0 +1,55 @@
+body{
+    background-color: rgb(62, 65, 70);
+}
+
+.cont{
+    display: flex;
+    height: 100vh;
+    text-align: center;
+    place-items: center;
+    flex-direction: column;
+}
+.cont h2{
+    margin: 2em;
+    margin-bottom: 1em;
+    display: block;
+    width: 100%;
+    font-size: 2.2rem;
+    color: white;
+}
+.cont hr{
+    background-color: white;
+    width: 80%;
+}
+.cont p{
+    margin: 2em;
+    font-size: 1.5rem;
+    color: white;
+}
+#fb{
+    color: #0071ba;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-shadow: 
+    1px 1px 0 white,
+    -1px -1px 0 white,
+    -1px 1px 0 white,
+    1px -1px 0 white;
+}
+
+
+
+@media only screen 
+and (max-device-width : 768px){
+    .about-cont{
+    display: grid;
+    padding: 1rem;
+    margin: auto;
+}
+.cont{
+    display: flex;
+    height: auto;
+    text-align: center;
+    place-items: center;
+}
+}
